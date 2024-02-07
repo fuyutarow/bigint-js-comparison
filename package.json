@@ -1,0 +1,31 @@
+{
+  "name": "comparison-bigint",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "biome lint ./src",
+    "fmt": "biome format --write ./src",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "big-number": "^2.0.0",
+    "big.js": "^6.2.1",
+    "bignumber.js": "^9.1.2",
+    "bn.js": "^5.2.1",
+    "decimal.js": "^10.4.3",
+    "decimal.js-light": "^2.5.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@types/big.js": "^6.2.2",
+    "@types/bn.js": "^5.1.5",
+    "@types/bun": "latest",
+    "vitest": "^1.2.2"
+  }
+}
